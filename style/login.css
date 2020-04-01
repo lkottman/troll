@@ -1,0 +1,19 @@
+body
+{
+    font-family: Arial;
+    color: black;
+}
+
+form
+{
+    text-align: center;
+    height: 200px; /* Höhe der div-Box */
+    width: 300px; /* Breite der div-Box */
+    margin-top: -100px; /* Damit der "Ausrichtungspunkt" in der Mitte der Box liegt */
+    margin-left: -150px;
+    position: absolute; /* positionieren */
+    top: 50%; /* in die Mitte verschieben */
+    left: 50%;
+    border: black 2px solid;
+    background: #ededed;
+}
