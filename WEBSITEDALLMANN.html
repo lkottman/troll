@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mockup Dallmann</title>
+    <link rel="stylesheet" href="Styles.css">
+
+</head>
+<body>
+<div id="Menu">
+    <img src="Pics/Logo-Dallmann.png" height="68" width="254" class="logo">
+    <h1><a class="BackToMain" href="WEBSITEDALLMANN.html" onclick="showWartung()"> Asset-Management</a></h1>
+    <div class="dropdown">
+        <button class="dropdownbutton" >Dropdown-Menü</button>
+        <div class="dropdown-content">
+            <a href="WEBSITEDALLMANN.html">Test</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+        </div>
+    </div>
+</div>
+<br>
+<div id="search">
+    <form>
+        <p>Suche nach Maschinennummer: <input type="search" value="12343"></p>
+    </form>
+</div>
+<table>
+    <tr>
+        <th>Nr</th>
+        <th>Geräte-Bezeichnung</th>
+        <th>Bild</th>
+        <th>Wartungsdatum</th>
+        <th>Zustand</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Rüttelplatte</td>
+        <td></td>
+        <td>01.05.2020</td>
+        <td>neu</td>
+    </tr>
+</table>
+<script>
+    function showWartung()
+    {
+        alert("Folgendes Gerät benötigt eine Wartung:\n\n" +
+            "Gerätnummer/Geräteart/Datum der Wartung/Wartungsarbeit\n" +
+            "1-Rüttelplatte-01.05.2020-HalbJahresWartung\n");
+
+    }
+    function showPrüfung() {
+        alert("Folgendes Gerät benötigt innerhalb des nächstens Monats eine TÜV oder UVV-Prüfung:\n" +
+            "Gerätenummer/Geräteart/Monat des Ablaufens/anstehende Prüfung\n" +
+            "1/Rüttelplatte/Mai/TÜV");
+
+    }
+    //showWartung();
+    showPrüfung();
+</script>
+
+</body>
+</html>
