@@ -6,13 +6,25 @@
     <link rel="stylesheet" href="style/login.css">
 </head>
 <body>
-<form>
-    <p>Email:</p>
-    <p><input type="email" value="example@dallmann.de" name="email"></p>
-    <p>Passwort:</p>
-    <p><input type="password" value="" name="password"></p>
-    <p><button type="submit">Anmelden</button><button type="reset">Zurücksetzen</button></p>
+<div id="welcome-message">
+    <img src="Pics/Logo-Dallmann.png" height="68" width="254" class="logo">
+    <h1>Asset-Management-Dallmann</h1>
+        <h2>Herzlich Willkommen</h2>
+</div>
+<form id="login">
+    <label for="email">E-Mail:</label>
+    <p><input type="email" placeholder="example@dallmann.de" name="email" value="" id="email"></p>
+    <label for="password">Passwort</label>
+    <p><input type="password" value="" name="password" id="password"></p>
+    <label for="remember">
+        <input type="checkbox" id="remember" name="remember" value="on">Login auf diesem Computer merken
+    </label>
+    <p><button type="submit" >Anmelden</button><button type="reset">Zurücksetzen</button></p>
 </form>
+<script>
+    let formbyId = document.getElementById('login');
+    console.log(formbyId.id);
+</script>
 
 
 </body>
